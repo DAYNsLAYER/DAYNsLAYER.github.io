@@ -1,22 +1,91 @@
-
+@font-face{
+	font-family: RussoOne;
+	src: url(../fonts/RussoOne-Regular.ttf);
+}
 P{          margin:35px ; 
 	        color: yellow;
 
 			color:black ;
 			font-size: 25px;
 		}
-		div{
-			width: 60%;
-			margin: auto;
-		}
 		a{
 			color: 	red;
 		}
-	    h1{
-		    color: red;
-	    }
-	   img{
-	   	max-width: 100%;
-	   	height: auto;
-	   	display: block;
+
+	  
+	   *{
+	   	padding: 0;
+	   	margin: 0;
+	   	box-sizing: border-box;
+	   	font-family: RussoOne;
 	   }
+
+	   	main{
+	   	width: 80%;
+	   	padding: 30px;
+	   	margin: auto;
+	  	background-color: grey	;
+	  	display: flex;
+	   	flex-wrap: wrap;
+	   	justify-content: center;
+	   	}
+	   	h1{
+	    	width: 100%;
+	    	text-align: center;
+		    color: red;
+		    font-size:30px ;
+	    }
+
+	   	.photo{
+	   		width: calc(50% - 60px);
+	   		height: calc((35vw - 40px) / 16 * 9);
+	   		margin: 10px;
+	   		background-color: red;
+	   		background-position: center;
+	   		background-size: cover;
+	   		transition: all 0.5s ease;
+	   	}
+	   	.photo1{
+	   		background-image:url(../../images/cr.jpg) ;
+	   	}
+	   	.photo2{
+	   		background-image:url(../../images/brawl.png);
+	   	}
+	   	.photo3{
+	   		background-image:url(../../images/csgo.jpg);
+	   	}
+	   	.photo4{
+	   		background-image:url(../../images/gd.jpg);
+	   	}
+	   	.photo5{
+	   		background-image:url(../../images/mine.jpg);
+	   	}
+	   	.photo6{
+	   		background-image:url(../../images/mndn.jpg);
+	   	}
+	   	.photo7{
+	   		background-image:url(../../images/mta.jpg);
+	   	}
+	   	.photo8{
+	   		background-image:url(../../images/so2.jpeg);
+	   	}
+	   	.photo9{
+	   		background-image:url(../../images/wart.jpg);
+	   	}
+	   	.photo10{
+	   		background-image:url(../../images/wotb.jpg);
+	   	}
+
+	   	.photo:hover
+	   	{
+	   		opacity: 1;
+	   		transform: scale(1.1) rotate(5deg);
+	   		z-index: 10;
+	   		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+	   	}
+	   	.img_link
+	   	{
+	   		display: contents;
+	   		opacity: 1;
+	   		transition: opasity 0.4s linear, transform 0.3s ease-in;
+	   	}

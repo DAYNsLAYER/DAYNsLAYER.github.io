@@ -1,0 +1,28 @@
+@media all and (max-width: 768px){
+	.photo{
+		max-width: intiial;
+		max-height: initial;
+		width: 95vw;
+		height: calc(95vw / 16 * 9);
+		margin: 2px;
+	}
+
+		main{
+	   	width: 98vw;
+	   	padding: 0px;
+	   	margin: auto;
+	  	background-color: grey	;
+	  	display: flex;
+	   	flex-wrap: wrap;
+	   	justify-content: center;
+	   	}
+}
+@media all and (min-width: 1200px){
+	.photo:hover
+   	{
+	   	opacity: 1;
+	   	transform: scale(1.1) rotate(5deg);
+	  	z-index: 10;
+	   	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+	}
+}
